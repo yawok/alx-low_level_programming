@@ -1,22 +1,14 @@
 #include "main.h"
-
 /**
- * _islower - Short description, single line
- * @c: contains value to be compared
+ * _islower - function
+ * @c: character to check case sensitiviy
  * Return: Always 0.
  */
 int _islower(int c)
-
 {
-
-if (c > 'a' && c < 'z')
+if (c >= 97 && c <= 122)
 {
 return (1);
 }
-
-else
-{
 return (0);
-}
-
 }
