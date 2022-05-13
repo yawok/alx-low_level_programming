@@ -1,1 +1,1 @@
-My Ox06 Pointers , Arrays and String task
+C - More pointers, arrays and strings

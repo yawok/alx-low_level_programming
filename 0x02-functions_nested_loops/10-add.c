@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * add - Entry function
- * @n1: first integer
- * @n2: second integer
- * Return: 0 or 1
+ * add - returns the sum of its parameters
+ * @a: int type number
+ * @b: int type number
+ * Return:0
  */
-int add(int n1, int n2)
+
+
+int add(int a, int b)
 {
-int result;
-result = n1 + n2;
-return (result);
+return (a + b);
 }

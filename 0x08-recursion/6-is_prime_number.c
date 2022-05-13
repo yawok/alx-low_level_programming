@@ -1,57 +1,33 @@
 #include "main.h"
 
 /**
- *evaluate_num - recursion loop
- *@num: num
- *@iterator: number to iterate
- *Return: return 1 or 0
+ * prime_a - main - check the code
+ * @a: number
+ * @b: number of power
+ * Return: Always 0.
  */
 
-int evaluate_num(int num, int iterator)
+int prime_a(int a, int b)
 {
-
-if (iterator == num - 1)
-{
-return (1);
+	if (a <= 1 || (a != b && a % b == 0))
+	{
+		return (0);
+	}
+		else if (a == b)
+	{
+		return (1);
+	}
+	return (prime_a(a, b + 1));
 }
 
-else if (num % iterator == 0)
-{
-return (0);
-}
-
-if (num % iterator != 0)
-{
-return (evaluate_num(num, iterator + 1));
-}
-
-return (0);
-
-}
 
 /**
- *is_prime_number - evaluate prime or not
- *@num: number
- *Return: return 1 prime - return 0 otherwise
+ * is_prime_number - main - check the code
+ * @n: number
+ *
+ * Return: Always 0.
  */
-
-int is_prime_number(int num)
+int is_prime_number(int n)
 {
-
-int iterator;
-
-iterator = 2;
-
-/* only greater than 2*/
-if (num < 2)
-{
-return (0);
-}
-
-if (num == 2)
-{
-return (1);
-}
-
-return (evaluate_num(num, iterator));
+	return (prime_a(n, 2));
 }
