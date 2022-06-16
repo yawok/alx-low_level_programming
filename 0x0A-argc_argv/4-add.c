@@ -1,41 +1,38 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <ctype.h>
 
 /**
- * main - cheks the fuction.
- * @argc: couts the arguments passed to the function.
- * @argv: gives the value for the argument passed to the function.
- *
- * Return: Returns always success.
+ * main - adds positive numbers
+ * @argc: n args
+ * @argv: arr args
+ * Return: 0
  */
-
 int main(int argc, char *argv[])
 {
-int sum;
-int count;
-int i;
+	unsigned int i, sum, num;
 
-count = 1;
-sum = 0;
-if (argc == 1)
-{
-printf("0\n");
-return (0);
-}
-while (count < argc)
-{
-for (i = 0; argv[count][i] != '\0'; i++)
-{
-if (!(isdigit(argv[count][i])))
-{
-printf("Error\n");
-return (1);
-}
-}
-sum += atoi(argv[count]);
-count++;
-}
-printf("%d\n", sum);
-return (0);
+	sum = 0;
+
+	if (argc < 3)
+	{
+		printf("%d\n", 0);
+		return (0);
+	}
+	while (argc-- && argc > 0)
+	{
+		for (i = 0; argv[argc][i] != '\0'; i++)
+		{
+			if (!(isdigit(argv[argc][i])))
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+		num = atoi(argv[argc]);
+		sum += num;
+	}
+	printf("%d\n", sum);
+	return (sum);
 }

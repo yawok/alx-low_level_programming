@@ -1,57 +1,72 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
- * op_add - Adds two numbers
- * @a: int 1
- * @b: int 2
- * Return: Returns result
-**/
+ * op_add - addition
+ * @a: sumnd 1
+ * @b: sumnd 2
+ * Return: rsult
+ */
+
 int op_add(int a, int b)
 {
-return (a + b);
+	return (a + b);
 }
 
 /**
- * op_sub - subtracts two numbers
- * @a: int 1
- * @b: int 2
- * Return: Returns result
-**/
+ * op_sub - subtraction
+ * @a: minuend
+ * @b: sustrnd
+ * Return: result
+ */
+
 int op_sub(int a, int b)
 {
 	return (a - b);
 }
 
 /**
- * op_mul - Multiplies two numbers
- * @a: int 1
- * @b: int 2
- * Return: Returns result
-**/
+ * op_mul - multiplication
+ * @a: multp 1
+ * @b: multp 2
+ * Return: result
+ */
 
 int op_mul(int a, int b)
 {
-return (a * b);
+	return (a * b);
 }
 
 /**
- * op_div - Divides two numbers
- * @a: int 1
- * @b: int 2
- * Return: Returns result
-**/
+ * op_div - division
+ * @a: divisr
+ * @b: dividndo
+ * Return: reult
+ */
 
 int op_div(int a, int b)
 {
-	return (a / b);
+	if (b)
+	{
+		return (a / b);
+	}
+	printf("Error\n");
+	exit(100);
 }
 
 /**
- * op_mod - Modules two numbers
- * @a: int 1
- * @b: int 2
- * Return: Returns result
-**/
+ * op_mod - modulo
+ * @a: vaper 1
+ * @b: vaper 2
+ * Return: result
+ */
 
 int op_mod(int a, int b)
 {
-return (a % b);
+	if (b)
+	{
+		return (a % b);
+	}
+	printf("Error\n");
+	exit(100);
 }

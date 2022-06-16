@@ -1,6 +1,6 @@
-#ifndef LIKEMACRO_H
-#define LIKEMACRO_H
+#ifndef FILE_SUM
+#define FILE_SUM
+#define SUM(X, Y) ((X) + (Y))
 
-#define SUM(x, y) (x + y)
 
 #endif

@@ -1,19 +1,16 @@
 #include <stdio.h>
 
 /**
- * main - prints the function.
- * @argc: is argument counter to an int.
- * @argv: is an agument value determiner for char.
- *
- * Return: Returns always success.
-**/
-
+ * main - prints all arguments it receives
+ * @argc: n args
+ * @argv: arr args
+ * Return: 0
+ */
 int main(int argc, char *argv[])
 {
-int i;
-for (i = 0; i < argc; i++)
-printf("%s\n", argv[i]);
+	int i;
 
-return (0);
-
+	for (i = 0; i < argc; i++)
+		printf("%s\n", argv[i]);
+	return (0);
 }

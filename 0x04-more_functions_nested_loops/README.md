@@ -1,1 +1,1 @@
-#C - More functions, more nested loops
+# more n functions and nested loops

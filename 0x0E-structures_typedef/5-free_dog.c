@@ -2,18 +2,18 @@
 #include <stdlib.h>
 
 /**
- * free_dog - function to free memory
- * @d: is pointer to dog_t
- *
- * Return: nothing.
-**/
+ * free_dog - free memory of dog
+ * @d: pointer to dog
+ */
 
 void free_dog(dog_t *d)
 {
-if (d != NULL)
-{
-free(d->name);
-free(d->owner);
-free(d);
-}
+	if (d)
+	{
+		if (d->name)
+			free(d->name);
+		if (d->owner)
+			free(d->owner);
+		free(d);
+	}
 }
